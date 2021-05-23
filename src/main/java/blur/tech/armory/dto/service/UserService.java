@@ -1,6 +1,5 @@
 package blur.tech.armory.dto.service;
 
-import blur.tech.armory.controller.models.User;
 import blur.tech.armory.controller.models.update.UserUpdate;
 import blur.tech.armory.dto.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;

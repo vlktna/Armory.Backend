@@ -62,5 +62,4 @@ public class UserEntity {
     @JsonBackReference
     @OneToMany(mappedBy = "owner", fetch = FetchType.LAZY)
     private List<BookingEntity> ownerOfBookings;
-
 }

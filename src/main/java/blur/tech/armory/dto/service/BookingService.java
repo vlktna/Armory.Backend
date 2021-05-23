@@ -43,4 +43,5 @@ public class BookingService {
     ) {
         return bookingRepository.findManyBookingsByNickNameAndDate(roomId, "" + year + "-" + month + "-" + day);
     }
+
 }

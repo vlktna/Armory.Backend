@@ -11,7 +11,6 @@ import java.util.function.Function;
 
 @Service
 public class Token {
-
     private final byte[] key = ("To replace programmers with robots, clients will have to accurately describe" +
             "what they want. We're save").getBytes(StandardCharsets.UTF_8);
 

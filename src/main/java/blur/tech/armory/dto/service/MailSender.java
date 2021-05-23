@@ -31,4 +31,5 @@ public class MailSender {
         tr.sendMessage(message, message.getAllRecipients());
         tr.close();
     }
+
 }

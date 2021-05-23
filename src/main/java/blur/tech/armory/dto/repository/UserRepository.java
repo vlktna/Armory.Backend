@@ -13,7 +13,6 @@ import javax.transaction.Transactional;
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
     UserEntity findAllByEmail(String email);
-
     UserEntity findUserEntityById(Integer id);
 
     @Transactional

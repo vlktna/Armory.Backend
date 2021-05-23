@@ -12,7 +12,6 @@ import java.util.List;
 @Repository
 public interface MeetingRoomRepository extends JpaRepository<MeetingRoomEntity, Long> {
     List<MeetingRoomEntity> findAllByType(String type);
-
     MeetingRoomEntity findById(Integer id);
 
     @Transactional

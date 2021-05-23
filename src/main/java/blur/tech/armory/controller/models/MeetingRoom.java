@@ -21,4 +21,5 @@ public class MeetingRoom {
     private Integer seatingCapacity;
     private User admin;
     private List<BookingShort> bookingList;
+
 }

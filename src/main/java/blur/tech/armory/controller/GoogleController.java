@@ -73,22 +73,7 @@ public class GoogleController {
     protected void addEventToCalendar(String code) throws IOException {
         TokenResponse response = flow.newTokenRequest(code).setRedirectUri(redirectURI).execute();
         credential = flow.createAndStoreCredential(response, "userID");
-
-//        client = new com.google.api.services.calendar.Calendar.Builder(httpTransport, JSON_FACTORY, credential)
-//                .setApplicationName(APPLICATION_NAME).build();
-//        Calendar.Events events = client.events();
-//
-//        Event event = new Event();
-//
-//        event.setSummary(bookingResponse.getName());
-//        event.setLocation("Meeting room №" + bookingResponse.getMeetingRoomID());
-//
-//        DateTime start = new DateTime(bookingResponse.getStartTime());
-//        DateTime end = new DateTime(bookingResponse.getEndTime());
-//        event.setStart(new EventDateTime().setDateTime(start));
-//        event.setEnd(new EventDateTime().setDateTime(end));
-//
-//        events.insert("primary", event).execute();
+        createEvent();
     }
 
     protected void addEventToCalendarWithAuthToken(String authToken) throws IOException {
@@ -102,21 +87,8 @@ public class GoogleController {
             clientSecrets = new GoogleClientSecrets().setWeb(web);
             httpTransport = GoogleNetHttpTransport.newTrustedTransport();
 
-//            client = new com.google.api.services.calendar.Calendar.Builder(httpTransport, JSON_FACTORY, credential)
-//                    .setApplicationName(APPLICATION_NAME).build();
-//            Calendar.Events events = client.events();
-//
-//            Event event = new Event();
-//
-//            event.setSummary(bookingResponse.getName());
-//            event.setLocation("Meeting room №" + bookingResponse.getMeetingRoomID());
-//
-//            DateTime start = new DateTime(bookingResponse.getStartTime());
-//            DateTime end = new DateTime(bookingResponse.getEndTime());
-//            event.setStart(new EventDateTime().setDateTime(start));
-//            event.setEnd(new EventDateTime().setDateTime(end));
-//
-//            events.insert("primary", event).execute();
+            createEvent();
+
         } catch (GeneralSecurityException e) {
             throw new IllegalStateException(e);
         }

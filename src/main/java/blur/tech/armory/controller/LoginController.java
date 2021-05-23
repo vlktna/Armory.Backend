@@ -112,6 +112,5 @@ public class LoginController {
         final UserDetails userDetails = userDetailsService.loadUserByUsername(email);
         return tokenUtil.generateToken(userDetails, newUser.getId());
     }
-
 }
 

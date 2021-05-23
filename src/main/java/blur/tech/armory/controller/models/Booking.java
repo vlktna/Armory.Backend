@@ -13,5 +13,4 @@ public class Booking {
     private Date startTime;
     private Date endTime;
     private MeetingRoom meetingRoomBooking;
-
 }

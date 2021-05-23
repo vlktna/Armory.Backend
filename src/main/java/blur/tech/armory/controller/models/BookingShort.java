@@ -12,4 +12,5 @@ public class BookingShort {
     private String name;
     private Date startTime;
     private Date endTime;
+
 }

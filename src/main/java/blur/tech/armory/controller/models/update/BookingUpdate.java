@@ -18,4 +18,5 @@ public class BookingUpdate {
     private MeetingRoom meetingRoomBooking;
     private User owner;
     private List<User> userList;
+
 }

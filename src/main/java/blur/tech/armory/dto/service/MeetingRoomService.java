@@ -13,12 +13,10 @@ import java.util.List;
 @Service
 public class MeetingRoomService {
     private final MeetingRoomRepository meetingRoomRepository;
-    private final BookingRepository bookingRepository;
 
     @Autowired
     public MeetingRoomService(MeetingRoomRepository meetingRoomRepository, BookingRepository bookingRepository) {
         this.meetingRoomRepository = meetingRoomRepository;
-        this.bookingRepository = bookingRepository;
     }
 
     @Transactional

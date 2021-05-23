@@ -12,4 +12,5 @@ public class UserUpdate {
     private String lastName;
     private String email;
     private UserRole role;
+
 }

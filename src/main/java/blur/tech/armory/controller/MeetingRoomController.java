@@ -103,4 +103,5 @@ public class MeetingRoomController {
 
         return new ResponseEntity(meetingRoomList, HttpStatus.OK);
     }
+
 }

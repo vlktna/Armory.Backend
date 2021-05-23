@@ -15,4 +15,5 @@ public class MeetingRoomUpdate {
     private Boolean wifi;
     private Boolean led;
     private Integer seatingCapacity;
+
 }

@@ -215,7 +215,5 @@ public class BookingController {
                 bookingRequest.getMeetingRoomID(),
                 bookingRequest.getUserEmailList()
         );
-
     }
-
 }

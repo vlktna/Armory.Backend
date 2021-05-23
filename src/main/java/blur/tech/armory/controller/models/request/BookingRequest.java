@@ -14,4 +14,5 @@ public class BookingRequest {
     private Date endTime;
     private Integer meetingRoomID;
     private List<String> userEmailList;
+
 }
